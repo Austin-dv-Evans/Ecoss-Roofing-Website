@@ -1,0 +1,16 @@
+
+// abstracts
+@import './abstracts/mixins.scss';
+@import './abstracts/variables.scss';
+@import './abstracts/animations.scss';
+
+// components
+@import './components/Navbar.scss';
+@import './components/Footer.scss';
+@import './components/Button.scss';
+
+// layouts
+@import './layouts/HomePage.scss';
+
+// reset
+@import './base/base.scss';

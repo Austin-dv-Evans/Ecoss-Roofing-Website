@@ -1,0 +1,28 @@
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary, 0.3),
+      rgba($color-primary-dark, 0.3)
+    ),
+    url("../../assets/images/houseAtDusk.jpg");
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+
+  &__heading {
+    font-size: 5rem;
+    margin-top: 3rem;
+  }
+  &__subheading {
+    font-size: 3rem;
+
+    &--2 {
+      font-size: 3rem;
+      margin: 3rem;
+    }
+  }
+}

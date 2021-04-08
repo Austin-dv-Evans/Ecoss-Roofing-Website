@@ -1,0 +1,9 @@
+.footer {
+  width: 100%;
+  background-color: black;
+  height: 10rem;
+
+  &__heading {
+    color: $color-primary-dark;
+  }
+}
