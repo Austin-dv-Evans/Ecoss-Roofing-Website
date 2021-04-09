@@ -8,9 +8,12 @@
 @import './components/Navbar.scss';
 @import './components/Footer.scss';
 @import './components/Button.scss';
+@import './components/Integrity.scss';
 
 // layouts
 @import './layouts/HomePage.scss';
+@import './layouts/AboutPage.scss';
+@import './layouts/Services.scss';
 
 // reset
 @import './base/base.scss';

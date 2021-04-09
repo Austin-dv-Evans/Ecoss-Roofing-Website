@@ -1,9 +1,55 @@
 .footer {
   width: 100%;
   background-color: black;
-  height: 10rem;
+  height: 30rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem;
+  align-items: center;
 
-  &__heading {
-    color: $color-primary-dark;
+  &__logo {
+    height: 20rem;
+    width: 40rem;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+  }
+  &__link {
+    font-size: 2.5rem;
+    color: $color-primary-light;
+    font-family: $google-font;
+    text-decoration: none;
+    margin: 0 0 3rem 0;
+    &:hover{
+      text-decoration: underline;
+      color: $color-secondary;
+    }
+  }
+  &__location {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__phoneIcon {
+    filter: $svg-fill-primary;
+    width: 6rem;
+  }
+  &__callNow {
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+  }
+  &__callToday {
+    font-size: 2.5rem;
+    color: $color-primary;
+    margin: 1rem;
+  }
+  &__phoneNumber {
+    font-size: 2rem;
+    color: $color-primary;
   }
 }

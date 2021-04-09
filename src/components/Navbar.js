@@ -1,5 +1,5 @@
-import React from 'react'
-import {useState} from 'react'
+import React, { useState } from 'react'
+
 import { Link } from 'react-router-dom'
 
 import Button from './FreeInspectionBtn'
@@ -7,7 +7,6 @@ import Button from './FreeInspectionBtn'
 import logo from '../assets/images/ECOSS_LOGO_Master.png'
 import phone from '../assets/icons/old-mobile.svg'
 
-import { CSSTransition } from "react-transition-group"
 
 const Navbar = () => {
 
@@ -25,8 +24,8 @@ const Navbar = () => {
           <Link to="/" className="navbar__link">
             Home
           </Link>
-          <Link to="/about" className="navbar__link">
-            About Us
+          <Link to="/services" className="navbar__link">
+            Services
           </Link>
           <Link to="/contact" className="navbar__link">
             Contact
@@ -45,7 +44,7 @@ const Navbar = () => {
             <h2 className="callNow__phoneNumber">303-881-0288</h2>
           </div>
             <Link to="/quote">
-              <Button />
+              <Button/>
             </Link>
         </div>
       </div>

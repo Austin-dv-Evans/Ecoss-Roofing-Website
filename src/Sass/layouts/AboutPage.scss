@@ -1,0 +1,48 @@
+.about {
+  &__container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20rem 0 10rem 0;
+    position: relative;
+    padding: 0 5rem;
+
+    &--2{
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0 5rem;
+      margin-bottom: 10rem;
+    }
+  }
+  &__image {
+    width: 50rem;
+    height: 40rem;
+    margin: 2rem;
+    object-fit: cover;
+  }
+  &__paragraph {
+    font-size: 3rem;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.747);
+    height: fit-content;
+    border-radius: 5px;
+    padding: 4rem;
+    margin: 3rem;
+    background-color: rgba(0, 0, 0, .2);
+    box-shadow: 0px 6px 30px $color-primary ;
+    font-family: $google-font;
+  }
+  &__heading{
+    position: absolute;
+    top: -10rem;
+    color: black;
+    font-size: 8rem;
+    font-family: $google-font;
+    filter: drop-shadow(1px 0px 3px $color-secondary);
+  }
+}

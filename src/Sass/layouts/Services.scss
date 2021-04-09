@@ -1,0 +1,49 @@
+.services {
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: fit-content;
+    position: relative;
+    padding: 10rem 4rem;
+
+    background-image: linear-gradient(
+    to right bottom,
+    rgba($color-secondary-dark, 0.8),
+    rgba($color-grey-dark, 0.8)
+    ),
+    url("../../assets/images/drawnPlans.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    // border-top: .5rem solid $color-primary-light;
+  }
+  &__heading {
+    margin-bottom: 3rem;
+    color: black;
+    font-size: 8rem;
+    font-family: $google-font;
+    filter: drop-shadow(1px 0px 3px $color-secondary);
+  }
+  &__headline {
+    font-size: 2.5rem;
+    padding: 3rem;
+    font-family: $google-font;
+    font-weight: 700;
+  }
+  &__grid {
+    display: grid;
+    padding: 0 4rem;
+    width: 100%;
+    margin: 3rem 0;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    &--list {
+      font-size: 2.5rem;
+      list-style-image: url('../../assets/icons/darkGreenCheck.svg');
+    }
+  }
+}

@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  height: 95vh;
+  justify-content: center;
+  min-height: 75vh;
   background-image: linear-gradient(
       to right bottom,
       rgba($color-primary, 0.3),
@@ -11,18 +12,38 @@
     url("../../assets/images/houseAtDusk.jpg");
   background-size: cover;
   background-position: top;
+  clip-path: polygon(100% 0, 100% 100%, 50% 95%, 0 100%, 0 0);
   background-attachment: fixed;
 
+  &__container {
+    margin: 3rem;
+    width: 50%;
+    background-color: #fcfaffa1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__heading {
-    font-size: 5rem;
-    margin-top: 3rem;
+    font-size: 4rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    font-family: $google-font;
   }
   &__subheading {
-    font-size: 3rem;
+    font-size: 2rem;
+    padding: 1.5rem;
+    font-family: $google-font;
 
     &--2 {
-      font-size: 3rem;
-      margin: 3rem;
+      font-size: 2.5rem;
+      margin: 2rem;
+      font-family: $google-font;
     }
+  }
+  &__button {
+    margin: 6rem;
+
   }
 }
