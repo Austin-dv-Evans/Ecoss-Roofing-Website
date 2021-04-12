@@ -1,9 +1,10 @@
 import React from 'react'
+import Contact from '../screens/Contact'
 
 const QuotePage = () => {
   return (
     <div>
-      <h1>Get a Quote!!!</h1>
+      <Contact />
     </div>
   )
 }

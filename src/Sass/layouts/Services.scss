@@ -7,12 +7,12 @@
     align-items: center;
     min-height: fit-content;
     position: relative;
-    padding: 10rem 4rem;
+    padding: 10rem 4rem 20rem 4rem;
 
     background-image: linear-gradient(
     to right bottom,
-    rgba($color-secondary-dark, 0.8),
-    rgba($color-grey-dark, 0.8)
+    rgba(black, 0.8),
+    rgba(white, 0.9)
     ),
     url("../../assets/images/drawnPlans.jpg");
     background-size: cover;
@@ -26,7 +26,7 @@
     color: black;
     font-size: 8rem;
     font-family: $google-font;
-    filter: drop-shadow(1px 0px 3px $color-secondary);
+    filter: drop-shadow(0px 0px 1px $color-secondary);
   }
   &__headline {
     font-size: 2.5rem;
@@ -43,6 +43,8 @@
     gap: 1rem;
     &--list {
       font-size: 2.5rem;
+      font-weight: bold;
+      font-family: $google-font;
       list-style-image: url('../../assets/icons/darkGreenCheck.svg');
     }
   }

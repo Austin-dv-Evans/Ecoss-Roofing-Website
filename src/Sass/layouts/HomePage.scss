@@ -11,12 +11,13 @@
     ),
     url("../../assets/images/houseAtDusk.jpg");
   background-size: cover;
-  background-position: top;
+  background-position: bottom right;
   clip-path: polygon(100% 0, 100% 100%, 50% 95%, 0 100%, 0 0);
   background-attachment: fixed;
 
   &__container {
-    margin: 3rem;
+    margin: 8rem 0 3rem 3rem;
+    padding: 1rem;
     width: 50%;
     background-color: #fcfaffa1;
     border-radius: 10px;
@@ -43,7 +44,7 @@
     }
   }
   &__button {
-    margin: 6rem;
+    margin: 5rem;
 
   }
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import { Link } from 'react-router-dom'
 
@@ -27,7 +27,7 @@ const Navbar = () => {
           <Link to="/services" className="navbar__link">
             Services
           </Link>
-          <Link to="/contact" className="navbar__link">
+          <Link to="/quote" className="navbar__link">
             Contact
           </Link>
           <Link to="/projects" className="navbar__link">

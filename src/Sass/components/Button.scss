@@ -7,14 +7,15 @@
   font-size: 2rem;
   font-weight: bold;
   transition: all 2s ease-in;
+  font-family: $google-font;
 
-  animation: bounce 2s ease-in 3s 10 ;
+  animation: bounce .5s ease-out 3s 10 ;
   -webkit-animation: bounce 2s ease-in 3s 10 ;
   -moz-animation: bounce 2s ease-in 3s 10 ;
   -o-animation: bounce 2s ease-in 3s 10 ;
 
   &:hover {
-    box-shadow: 3px 3px $color-secondary-light, 0 0 .4em $color-secondary;
+    box-shadow: 0px 0px 20px $color-secondary-light, 0 0 .4em $color-secondary;
     transform: scale(1.05);
   }
 }

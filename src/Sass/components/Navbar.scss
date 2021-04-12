@@ -4,7 +4,6 @@
     background-color: black;
     display: flex;
     justify-content: space-between;
-    
   }
 
   &__navigation {
@@ -14,7 +13,7 @@
     align-items: center;
     width: fit-content;
     padding-right: 3rem ;
-
+    
     &--links {
       display: flex;
       justify-content: flex-end;

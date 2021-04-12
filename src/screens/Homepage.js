@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Button from '../components/FreeInspectionBtn'
 import Integrity from '../components/Integrity'
-import AboutPage from './AboutPage'
+
 
 const Homepage = () => {
   return (
@@ -15,7 +15,7 @@ const Homepage = () => {
             always been and will always be our number one priority.
           </h2>
           <h2 className="homepage__subheading">
-            Serving the Greater Denver Metro Area for over 35 years
+            Serving the Greater Denver Metro Area for over 35 years!
           </h2>
         </div>
         <div className="homepage__button">
@@ -24,7 +24,6 @@ const Homepage = () => {
           </Link>
         </div>
       </div>
-      {/* <AboutPage /> */}
       <Integrity />
     </>
   )

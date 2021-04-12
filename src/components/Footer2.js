@@ -1,13 +1,15 @@
 import React from 'react'
+
 import { Link } from 'react-router-dom'
 import logo from '../assets/images/ECOSS_LOGO_Master.png'
 import phone from "../assets/icons/old-mobile.svg"
 import Button from './FreeInspectionBtn'
-const Footer = () => {
+
+const Footer2 = () => {
   return (
     <>
-      <footer className="footer">
-        <div className="footer__container">
+      <footer className="footer2">
+        <div className="footer2__container">
           <img
             src={logo}
             alt="Ecoss Roofing and Construction Logo"
@@ -25,12 +27,10 @@ const Footer = () => {
             </div>
             <Link to="/quote">
               <Button />
-            </Link>
-            
+            </Link>  
           </div>
         </div>
-      </footer>
-      <div className="footer__links">
+      <div className="footer2__links">
         <Link to="/" className="footer__link">
           Home
         </Link>
@@ -44,8 +44,10 @@ const Footer = () => {
           Projects
         </Link>
       </div>
+      </footer>
     </>
   )
 }
 
-export default Footer
+
+export default Footer2
