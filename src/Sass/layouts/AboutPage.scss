@@ -1,8 +1,15 @@
 .about {
   &__page{
-    background-image: url('../../assets//images/abstractRoof.jpg');
+    // background-image: url('../../assets//images/greenRoof.jpg');
+    background-image: linear-gradient(
+    to right bottom,
+    rgba($color-primary, 0.5),
+    rgba($color-primary-dark, 0.8)
+    ),
+    url("../../assets/images/cityBlock2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom right;
     min-height: fit-content;
     padding-bottom: 10rem;
   }
@@ -41,7 +48,7 @@
     border-radius: 5px;
     padding: 4rem 6rem;
     margin: 10rem 10rem;
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(black, .7);
     position: absolute;
     font-family: $google-font;
   }

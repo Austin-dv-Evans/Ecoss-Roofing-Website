@@ -6,7 +6,15 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 6rem 0;
+    padding: 14rem 0 15rem 0;
+    margin: -6rem  0 0 0;
+    background-color: $color-grey-dark;
+    background-image: linear-gradient(
+    to right bottom,
+    rgba($color-grey-dark, 0.8),
+    rgba(black, 0.8)
+    ),
+    url("../../assets/images/repeated-square-dark.png");
   }
   &__infoBox{
     display: flex;
@@ -16,8 +24,15 @@
     height: fit-content;
     text-align: center;
     margin: 2rem;
-    background-color: #fcfaff47;
-    box-shadow: 3px 3px 20px $color-secondary-light, 0 0 .4em $color-secondary;
+    border-radius: 10px;
+    // background-color: #fcfaff47;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary, 0.3),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url("../../assets/images/squared_metal.png");
+    box-shadow: 3px 3px 20px $color-secondary-light, 0 0 1.4em $color-secondary;
   }
   &__icon {
     width: 20rem;

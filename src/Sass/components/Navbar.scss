@@ -58,14 +58,30 @@
   background-color:$color-grey-dark;
   width: fit-content;
   border-radius: 20px;
-  margin-right: 1rem;
-  padding-right: 1rem;
+  margin: .5rem 1.5rem 0 0;
+  padding: 1rem 1.5rem 1rem 1rem;
+  text-decoration: none;
   &:hover {
     box-shadow: 3px 3px $color-secondary-light, 0 0 .4em $color-secondary;
   }
   
+  &__link {
+    text-decoration: none;
+  }
+
   &__phoneNumber {
     font-size: 2rem;
+    text-decoration: none;
+    color: $color-primary;
+    &:visited {
+      text-decoration: none;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+    &:active {
+      text-decoration: none;
+    }
   }
 }
 

@@ -24,9 +24,9 @@ const Projects = () => {
   };
 
   return (
-    <>
-      <h1 className="projects__heading"> Projects</h1>
+
       <div className="projects__page">
+      <h1 className="projects__heading"> Projects</h1>
         <div className="imgSlide__container">
           <div className="numberText">{index + 1} / 3</div>
           <img src={slides[index]} alt="" className="projects__img" />
@@ -60,7 +60,6 @@ const Projects = () => {
             </div>
           }
       </div>
-    </>
   )
 }
 

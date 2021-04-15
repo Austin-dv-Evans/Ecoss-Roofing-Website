@@ -35,17 +35,19 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="navbar__navigation--phoneQuote">
-          <div className="callNow">
-            <img
-              className="navbar__phoneIcon"
-              src={phone}
-              alt="Call Ecoss Roofing and Construction Now"
-            />
-            <h2 className="callNow__phoneNumber">303-881-0288</h2>
+          <a href="tel:1+303-881-0288" className="callNow__link">
+            <div className="callNow">
+              <img
+                className="navbar__phoneIcon"
+                src={phone}
+                alt="Call Ecoss Roofing and Construction Now"
+              />
+              <h2 className="callNow__phoneNumber">303-881-0288</h2>
           </div>
-            <Link to="/quote">
-              <Button/>
-            </Link>
+          </a>
+          <Link to="/quote">
+            <Button />
+          </Link>
         </div>
       </div>
     </nav>

@@ -55,17 +55,26 @@
   &__callNow {
     display: flex;
     align-items: center;
-    margin: 2rem;
-    padding-rightd: 3rem;
+    margin: 2rem 0 2rem 2rem;
+    flex-direction: row;
+    justify-content: space-around;
+
+    &--link {
+      display: flex;
+      text-decoration: none;
+      justify-content: center;
+      align-items: flex-end;
+    }
   }
   &__callToday {
     font-size: 2.5rem;
     color: $color-primary;
-    margin: 1rem;
+    margin: 0 2rem 1rem 0;
   }
   &__phoneNumber {
     font-size: 2.5rem;
     color: $color-primary;
+    margin: 0 0 1rem 0;
   }
 }
 
@@ -73,6 +82,7 @@
   width: 100%;
   background-color: black;
   height: 60vh;
+  max-height: 40rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

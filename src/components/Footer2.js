@@ -17,33 +17,35 @@ const Footer2 = () => {
           />
           <div className="footer__location">
             <div className="footer__callNow">
-              <img
-                className="footer__phoneIcon"
-                src={phone}
-                alt="Call Ecoss Roofing and Construction Now"
-              />
-              <h1 className="footer__callToday">Call Us Today</h1>
-              <h2 className="footer__phoneNumber">303-881-0288</h2>
+              <a href="tel:1+303-881-0288" className="footer__callNow--link">
+                <h1 className="footer__callToday">Call Us Today</h1>
+                <h2 className="footer__phoneNumber">303-881-0288</h2>
+                <img
+                  className="footer__phoneIcon"
+                  src={phone}
+                  alt="Call Ecoss Roofing and Construction Now"
+                />
+              </a>
             </div>
             <Link to="/quote">
               <Button />
-            </Link>  
+            </Link>
           </div>
         </div>
-      <div className="footer2__links">
-        <Link to="/" className="footer__link">
-          Home
-        </Link>
-        <Link to="/services" className="footer__link">
-          Services
-        </Link>
-        <Link to="/quote" className="footer__link">
-          Contact
-        </Link>
-        <Link to="/projects" className="footer__link">
-          Projects
-        </Link>
-      </div>
+        <div className="footer2__links">
+          <Link to="/" className="footer__link">
+            Home
+          </Link>
+          <Link to="/services" className="footer__link">
+            Services
+          </Link>
+          <Link to="/quote" className="footer__link">
+            Contact
+          </Link>
+          <Link to="/projects" className="footer__link">
+            Projects
+          </Link>
+        </div>
       </footer>
     </>
   )

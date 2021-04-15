@@ -15,18 +15,19 @@ const Footer = () => {
           />
           <div className="footer__location">
             <div className="footer__callNow">
+              <a href="tel:1+303-881-0288" className="footer__callNow--link">
+                <h1 className="footer__callToday">Call Us Today</h1>
+                <h2 className="footer__phoneNumber">303-881-0288</h2>
               <img
                 className="footer__phoneIcon"
                 src={phone}
                 alt="Call Ecoss Roofing and Construction Now"
               />
-              <h1 className="footer__callToday">Call Us Today</h1>
-              <h2 className="footer__phoneNumber">303-881-0288</h2>
+              </a>
             </div>
             <Link to="/quote">
               <Button />
             </Link>
-            
           </div>
         </div>
       </footer>

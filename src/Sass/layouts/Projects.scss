@@ -1,15 +1,15 @@
 .projects {
 
   &__page {
-    height: fit-content;
-    min-height: 47rem;
-    margin: auto;
+    height: 90vh;
+    min-height: fit-content;
     position: relative;
     max-width: 100vw;
+    margin-bottom: 20rem;
   }
 
   &__heading {
-    margin: 3rem;
+    margin: 3rem 0 0 0 ;
     color: black;
     font-size: 8rem;
     font-family: $google-font;
@@ -20,6 +20,7 @@
   &__img {
     width: 100%;
     max-height: 60%;
+    margin-top: 8rem;
   }
 }
 .imgSlide{
@@ -39,7 +40,7 @@
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 30%;
+  top: 50%;
   margin: 2rem;
   width: auto;
   padding: 16px;
@@ -65,7 +66,7 @@
   font-size: 2.5rem;
   padding: 1rem;
   position: absolute;
-
+  margin-top: 4rem;
 }
 .caption {
   margin-top: 1rem;

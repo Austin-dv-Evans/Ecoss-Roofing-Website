@@ -4,12 +4,13 @@
   align-items: flex-start;
   justify-content: center;
   min-height: 75vh;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba($color-primary, 0.3),
-      rgba($color-primary-dark, 0.3)
-    ),
-    url("../../assets/images/houseAtDusk.jpg");
+  // background-image: linear-gradient(
+  //     to right bottom,
+  //     rgba($color-primary, 0.3),
+  //     rgba($color-primary-dark, 0.3)
+  //   ),
+  //   url("../../assets/images/houseAtDusk.jpg");
+  background-image: url("../../assets/images/houseAtDusk.jpg");
   background-size: cover;
   background-position: bottom right;
   clip-path: polygon(100% 0, 100% 100%, 50% 95%, 0 100%, 0 0);
@@ -19,8 +20,9 @@
     margin: 8rem 0 3rem 3rem;
     padding: 1rem;
     width: 50%;
+    min-width: 557px;
     background-color: #fcfaffa1;
-    border-radius: 10px;
+
     display: flex;
     flex-direction: column;
     align-items: center;

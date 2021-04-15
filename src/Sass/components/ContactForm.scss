@@ -2,11 +2,13 @@
 
   &__section {
     padding: 10rem 0;
-    background-image: linear-gradient(
-    to right bottom,
-    $color-grey-dark,
-    $color-grey-light
-  );
+      background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary, 0.3),
+      rgba($color-primary-dark, 0.3)
+    ),
+    url("../../assets/images/fancy-cushion.png");
+    
   }
 
   &__form {
