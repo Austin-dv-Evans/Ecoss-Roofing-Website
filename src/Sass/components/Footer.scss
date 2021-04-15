@@ -50,7 +50,8 @@
   }
   &__phoneIcon {
     filter: $svg-fill-primary;
-    width: 6rem;
+    width: 4rem;
+    padding: 1rem;
   }
   &__callNow {
     display: flex;
@@ -58,7 +59,7 @@
     margin: 2rem 0 2rem 2rem;
     flex-direction: row;
     justify-content: space-around;
-
+    
     &--link {
       display: flex;
       text-decoration: none;

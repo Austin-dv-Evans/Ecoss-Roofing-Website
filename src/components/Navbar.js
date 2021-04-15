@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import Button from './FreeInspectionBtn'
 
 import logo from '../assets/images/ECOSS_LOGO_Master.png'
-import phone from '../assets/icons/old-mobile.svg'
+import phone from '../assets/icons/iPhoneIcon.png'
 
 
 const Navbar = () => {

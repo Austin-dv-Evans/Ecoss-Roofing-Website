@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../assets/images/ECOSS_LOGO_Master.png'
-import phone from "../assets/icons/old-mobile.svg"
+import phone from "../assets/icons/iPhoneIcon.png"
 import Button from './FreeInspectionBtn'
 const Footer = () => {
   return (
