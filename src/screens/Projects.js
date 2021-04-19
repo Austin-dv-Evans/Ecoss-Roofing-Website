@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import neighborhoodFromAbove from "../assets/images/neightborhoodFromAbove.jpg"
 import duskHouse from "../assets/images/houseAtDusk.jpg"
 import dayHouse from "../assets/images/houseDaylight.jpg"
+import SwipeSlide from '../components/SwipeSlide'
 
 
 const Projects = () => {
@@ -24,9 +25,10 @@ const Projects = () => {
   };
 
   return (
-
-      <div className="projects__page">
-      <h1 className="projects__heading"> Projects</h1>
+      <>
+    <div className="projects__page">
+      <h1 className="projects__heading">Projects</h1>
+        
         <div className="imgSlide__container">
           <div className="numberText">{index + 1} / 3</div>
           <img src={slides[index]} alt="" className="projects__img" />
@@ -59,7 +61,9 @@ const Projects = () => {
               <span className="dot active" onClick={() => setIndex(2)}></span>
             </div>
           }
-      </div>
+    </div>
+    <SwipeSlide/>
+    </>
   )
 }
 

@@ -7,11 +7,11 @@ import Footer from './components/Footer'
 import Footer2 from './components/Footer2'
 import HomePage from './screens/Homepage'
 import AboutPage from './screens/AboutPage'
-import Projects from './screens/Projects'
 import QuotePage from './screens/QuotePage'
 
 import { useEffect } from "react"
 import { useLocation } from "react-router-dom"
+import SwipeSlide from './components/SwipeSlide'
 
 export function ScrollToTop() {
   const { pathname } = useLocation()
@@ -39,7 +39,7 @@ function App() {
             <Footer2 />
           </Route>
           <Route path="/projects" exact>
-            <Projects />
+            <SwipeSlide />
             <Footer2 />
           </Route>
           <Route path="/quote" exact>

@@ -1,6 +1,5 @@
 .integrity {
   &__container {
-    
     width: 100%;
     height: fit-content;
     display: flex;
@@ -15,6 +14,9 @@
     rgba(black, 0.8)
     ),
     url("../../assets/images/repeated-square-dark.png");
+    @include respond(tab-port-sm){
+      flex-direction: column;
+    }
   }
   &__infoBox{
     display: flex;
@@ -25,7 +27,6 @@
     text-align: center;
     margin: 2rem;
     border-radius: 10px;
-    // background-color: #fcfaff47;
     background-image: linear-gradient(
       to right bottom,
       rgba($color-primary, 0.3),
@@ -33,6 +34,12 @@
     ),
     url("../../assets/images/squared_metal.png");
     box-shadow: 3px 3px 20px $color-secondary-light, 0 0 1.4em $color-secondary;
+    @include respond(tab-port-sm){
+      width: 50%;
+      align-items: center;
+      margin-bottom: 12rem;
+      padding: 6rem;
+    }
   }
   &__icon {
     width: 20rem;
@@ -45,12 +52,19 @@
     margin-bottom: 1rem;
     text-decoration: underline;
     font-family:  $google-font;
+    @include respond(tab-port-sm){
+      font-size: 4rem;
+    }
   }
   &__paragraph {
     font-size: 2rem;
     font-weight: 600;
     min-height: 20rem;
     font-family:  $google-font;
+    @include respond(tab-port-sm){
+      font-size: 3rem;
+    }
+  
   }
 
 }

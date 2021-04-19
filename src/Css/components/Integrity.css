@@ -1,9 +1,9 @@
 /* Error: Undefined variable.
  *    ,
- * 20 |     box-shadow: 3px 3px 20px $color-secondary-light, 0 0 .4em $color-secondary;
- *    |                              ^^^^^^^^^^^^^^^^^^^^^^
+ * 10 |     background-color: $color-grey-dark;
+ *    |                       ^^^^^^^^^^^^^^^^
  *    '
- *   src/Sass/components/Integrity.scss 20:30  root stylesheet */
+ *   src/Sass/components/Integrity.scss 10:23  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 20 \2502      box-shadow: 3px 3px 20px $color-secondary-light, 0 0 .4em $color-secondary;\a    \2502                               ^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   src/Sass/components/Integrity.scss 20:30  root stylesheet";
+  content: "Error: Undefined variable.\a    \2577 \a 10 \2502      background-color: $color-grey-dark;\a    \2502                        ^^^^^^^^^^^^^^^^\a    \2575 \a   src/Sass/components/Integrity.scss 10:23  root stylesheet";
 }

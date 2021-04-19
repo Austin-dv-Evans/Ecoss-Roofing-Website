@@ -6,7 +6,7 @@ const AboutPage = () => {
     <div className="about__page">
       <Services />
       <div className="about__container">
-        <h3 className="about__heading">Who We Are</h3>å
+        <h3 className="about__heading">Who We Are</h3>
         <p className="about__paragraph">
           Ecoss Construction is a family owned residential and commercial
           roofing company founded in 2010 in Thornton, CO with over 35 years of

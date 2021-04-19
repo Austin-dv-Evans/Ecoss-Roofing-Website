@@ -3,50 +3,54 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  min-height: 75vh;
-  // background-image: linear-gradient(
-  //     to right bottom,
-  //     rgba($color-primary, 0.3),
-  //     rgba($color-primary-dark, 0.3)
-  //   ),
-  //   url("../../assets/images/houseAtDusk.jpg");
+  min-height: 85vh;
   background-image: url("../../assets/images/houseAtDusk.jpg");
   background-size: cover;
   background-position: bottom right;
   clip-path: polygon(100% 0, 100% 100%, 50% 95%, 0 100%, 0 0);
   background-attachment: fixed;
+  padding-bottom: 10rem;
+  @include respond(phone){
+    align-items: center;
+  }
 
   &__container {
-    margin: 8rem 0 3rem 3rem;
+    margin: 2rem 0 3rem 3rem;
     padding: 1rem;
     width: 50%;
     min-width: 557px;
-    background-color: #fcfaffa1;
-
+    background-color: rgba($color-grey-light, 0.9);
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: solid 10px rgba($color-primary, $alpha: .3);
+    @include respond(phone){
+      margin: 0;
+      min-width: 350px;
+    }
   }
 
   &__heading {
     font-size: 4rem;
     margin-top: 2rem;
     padding: 1rem;
-    font-family: $google-font;
+    font-family: $heading-font;
+    text-align: center;
   }
   &__subheading {
     font-size: 2rem;
     padding: 1.5rem;
     font-family: $google-font;
-
+    text-align: center;
     &--2 {
       font-size: 2.5rem;
       margin: 2rem;
       font-family: $google-font;
+      text-align: center;
     }
   }
   &__button {
-    margin: 5rem;
+    margin: 2rem 5rem;
 
   }
 }

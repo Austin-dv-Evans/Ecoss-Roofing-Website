@@ -11,25 +11,46 @@ const Contact = () => {
   const [address, setAddress] = useState('')
   const [phone, setPhone] = useState('')
   const [info, setInfo] = useState('')
+  const [date, setDate] = useState('')
+  const [antiSpam, setAntiSpam] = useState('')
+  const [alertDialog, setAlertDialog] = useState(false)
 
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    alert(`Thank you! ${name} Ecoss Roofing and Construction will contact you within 2-3 business days. Have a great day!`)
-    console.log(name, email, address, phone, info)
-    axios.post(
-      "https://sheet.best/api/sheets/dfdd7ded-73bb-46c8-a75c-5ece3282bc17",
-      { name, email, address, phone, info }
-    )
-    setName('')
+    if(antiSpam !== ''){
+      alert('We dont accept forms from robots')
+    }
+    else{
+      axios.post(
+        "https://sheet.best/api/sheets/d53e427d-a0aa-436d-8974-ee6674eb8013",
+        { name, email, address, phone, info, date }
+      )
+      setAlertDialog(true)
+    }
+    
+    
     setEmail('')
     setAddress('')
     setPhone('')
     setInfo('')
+    setDate('')
+    setAntiSpam('')
+  }
+
+  const closeNameReset = () => {
+    setName('')
+    setAlertDialog(false)
   }
 
   return (
     <div className="book__section">
+      {alertDialog && 
+        <div className="book__alert">
+          <h1 className="book__alert--heading">Thank you {name}, Ecoss will be in contact with you as soon as possible. Have a great day. </h1>
+          <button className="book__alert--close" onClick={() => closeNameReset()}>Close</button>
+        </div>
+      }
       <div className="book__form">
         <form action="#" className="form" onSubmit={handleSubmit}>
           <div>
@@ -96,6 +117,27 @@ const Contact = () => {
               className="form__input"
               name="message"
             ></textarea>
+          </div>
+          <div className="form__group">
+            <input
+              type="date"
+              value={date}
+              onChange={(e) => setDate(e.target.value)}
+              id="date"
+              className="form__input"
+              required
+              name="date"
+            />
+          </div>
+          <div className="form__group anti-spam">
+            <input
+              type="spam"
+              value={antiSpam}
+              onChange={(e) => setAntiSpam(e.target.value)}
+              id="spam"
+              className="form__input"
+              name="spam"
+            />
           </div>
           <div className="form__group">
             <input

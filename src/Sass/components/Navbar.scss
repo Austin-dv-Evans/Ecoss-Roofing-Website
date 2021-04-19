@@ -4,6 +4,10 @@
     background-color: black;
     display: flex;
     justify-content: space-between;
+    z-index: 6;
+    @include respond(tiny-phone){
+      flex-direction: column;
+    }
   }
 
   &__navigation {
@@ -13,17 +17,41 @@
     align-items: center;
     width: fit-content;
     padding-right: 3rem ;
-    
+    z-index: 6;
+    @include respond(tab-port-sm){
+      padding-right: 0;
+    }
+    @include respond(phone){
+      width: 100%;
+      padding-right: 0;
+    }
     &--links {
       display: flex;
       justify-content: flex-end;
       width: 100%;
+
+      @include respond(tab-port-sm){
+        display: none;
+      }
     }
 
     &--phoneQuote {
       display: flex;
       justify-content: flex-end;
       width: 100%;
+      @include respond(tab-port-sm){
+        justify-content: center;
+        align-items: center;
+      }
+      @include respond(phone){
+        justify-content: flex-end;
+        position: sticky;
+      }
+      @include respond(tiny-phone){
+        // flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+      }
     }
   }
 
@@ -42,11 +70,26 @@
   &__brand {
     height: 20rem;
     padding: 2rem;
+
+    &--link{
+      align-self: center;
+    }
+    @include respond(tab-port-sm){
+      height: 17rem
+    }
+    @include respond(tiny-phone){
+      height: 25rem;
+    }
   }
 
   &__phoneIcon {
     filter: $svg-fill-primary;
     width: 4rem;
+    padding: 1rem;
+  }
+  &__calIcon {
+    filter: $svg-fill-primary;
+    width: 8rem;
     padding: 1rem;
   }
 }
@@ -56,8 +99,7 @@
   justify-content: center;
   color: $color-primary-light;
   align-items: center;
-  // background-image: url('../../assets/images/connectwork.png');
-  // background-color:$color-grey-dark;
+  min-height: 6.8rem;
   background-color:black;
   box-shadow: 0px 1px 10px $color-secondary-dark;
   width: fit-content;
@@ -65,12 +107,23 @@
   margin: .5rem 1.5rem 0 0;
   padding: 1rem 1.5rem 1rem 1rem;
   text-decoration: none;
+  @include respond(tab-port-sm){
+    padding: 2rem;
+    margin: 0 2rem 0 0;
+  }
+  @include respond(phone){
+    margin: 1rem;
+  }
+  @include respond(tiny-phone){
+    margin-right: 4rem;
+  }
   &:hover {
     box-shadow: 3px 3px $color-secondary-light, 0 0 .4em $color-secondary;
   }
   
   &__link {
     text-decoration: none;
+    
   }
 
   &__phoneNumber {
@@ -86,6 +139,10 @@
     &:active {
       text-decoration: none;
     }
+
+    @include respond(tab-port-sm){
+      display: none;
+    }
   }
 }
 
@@ -95,4 +152,95 @@
 .get-a-quote-bounce-enter-active{
   transform: scale(1.5);
   transition: all 2s ease-in;
+}
+
+.navbar__scheduleBtn {
+
+  @include respond(tab-port-sm){
+    display: none;
+  }
+}
+
+.navbar__hamburger{
+  display: none;
+
+  @include respond(tab-port-sm){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    padding: 3rem;
+    margin: 2rem 2.5rem 2rem 2rem;
+    color: $color-primary-light;
+    min-height: 6.8rem;
+    background-color:black;
+    box-shadow: 0px 1px 10px $color-secondary-dark;
+    width: fit-content;
+    border-radius: 20px;
+    border: none;
+    transition: all 1s;
+  }
+
+  @include respond(phone){
+    margin: 1rem;
+    padding: 3rem;
+  }
+  
+}
+.navbar__hamburger:not(:first-child){
+  margin-right: 4rem;
+}
+.navbar__hamburger--rotated{
+  display: none;
+
+  @include respond(tab-port-sm){
+    display: flex;
+    transition: all 1s;
+    transform: rotate(90deg);
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    padding: 3rem;
+    // font-weight: bold;
+    margin: 2rem 2.5rem 2rem 2rem;
+    color: $color-primary-light;
+    min-height: 6.8rem;
+    background-color:black;
+    box-shadow: 0px 1px 10px $color-secondary-dark;
+    width: fit-content;
+    border-radius: 20px;
+    border: none;
+  }
+  @include respond(phone){
+    // margin: 1rem;
+    // padding: 2rem;
+  }
+}
+
+.sideNav {
+  width: 45vw;
+  height: 100vh;
+  position: fixed;
+  background-color: black;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s;
+  animation: moveInLeft 1s ease-out;
+
+  &__link {
+    font-size: 2.5rem;
+    color: $color-primary-light;
+    font-family: $heading-font;
+    text-decoration: none;
+    margin: 3rem;
+    &:hover{
+      text-decoration: underline;
+      color: $color-secondary;
+    }
+  }
 }

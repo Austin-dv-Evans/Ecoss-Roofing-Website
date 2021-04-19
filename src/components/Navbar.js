@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import { Link } from 'react-router-dom'
 
@@ -6,13 +6,14 @@ import Button from './FreeInspectionBtn'
 
 import logo from '../assets/images/ECOSS_LOGO_Master.png'
 import phone from '../assets/icons/iPhoneIcon.png'
-
+import cal from '../assets/icons/calendar1.svg'
 
 const Navbar = () => {
 
+  const [open, setOpen] = useState(false)
   return (
     <nav className="navbar__container">
-      <a href="/">
+      <a href="/" className="navbar__brand--link">
         <img
           src={logo}
           alt="Ecoss Construction Roofing Logo"
@@ -43,13 +44,54 @@ const Navbar = () => {
                 alt="Call Ecoss Roofing and Construction Now"
               />
               <h2 className="callNow__phoneNumber">303-881-0288</h2>
-          </div>
+            </div>
           </a>
-          <Link to="/quote">
+          <Link to="/quote" className="navbar__scheduleBtn">
             <Button />
           </Link>
+          <Link to="/quote" onClick={() => setOpen(false)}>
+            <button className="navbar__hamburger">
+              <img
+                className="navbar__calIcon"
+                src={cal}
+                alt="Call Ecoss Roofing and Construction Now"
+              />
+            </button>
+          </Link>
+
+          <button id="menuBtn" className={open ? "navbar__hamburger--rotated": "navbar__hamburger"} onClick={() => setOpen(!open)}>
+            lll
+          </button>
         </div>
       </div>
+      {open && (
+        <div className="sideNav">
+          <Link to="/" className="sideNav__link" onClick={() => setOpen(!open)}>
+            Home
+          </Link>
+          <Link
+            to="/services"
+            className="sideNav__link"
+            onClick={() => setOpen(!open)}
+          >
+            Services
+          </Link>
+          <Link
+            to="/quote"
+            className="sideNav__link"
+            onClick={() => setOpen(!open)}
+          >
+            Contact
+          </Link>
+          <Link
+            to="/projects"
+            className="sideNav__link"
+            onClick={() => setOpen(!open)}
+          >
+            Projects
+          </Link>
+        </div>
+      )}
     </nav>
   )
 }

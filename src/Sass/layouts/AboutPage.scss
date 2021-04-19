@@ -1,12 +1,6 @@
 .about {
   &__page{
-    // background-image: url('../../assets//images/greenRoof.jpg');
-    background-image: linear-gradient(
-    to right bottom,
-    rgba($color-primary, 0.5),
-    rgba($color-primary-dark, 0.8)
-    ),
-    url("../../assets/images/cityBlock2.jpg");
+    background-image:linear-gradient(to bottom, rgba($color-primary, .7) , rgba(black, .7)), url('../../assets/images/reflection.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom right;
@@ -36,7 +30,6 @@
       height: fit-content;
       display: flex;
       align-items: center;
-
     }
   }
 
@@ -54,15 +47,15 @@
   }
   &__heading{
     position: absolute;
-    box-shadow: 0px 0px 8px $color-primary ;
-
-    background-color: rgba(0, 0, 0, 0.9);;
+    // box-shadow: 0px 0px 8px $color-primary ;
+    font-family: $heading-font;
+    // background-color: rgba(0, 0, 0, 0.9);;
     padding: 2rem;
     top: -15rem;
-    color: rgba(245, 245, 245, 0.671);
+    // color: rgba(245, 245, 245, 0.671);
+    color: black;
     font-size: 8rem;
-    font-family: $google-font;
-    filter: drop-shadow(0px 0px 1px white);
+    filter: drop-shadow(0px 0px 3px white);
 
 
   }

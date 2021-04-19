@@ -23,6 +23,12 @@
         @content;
     }
     }
+    @if $breakpoint == tab-port-sm {
+    @media only screen and (max-width: 50em) {
+        // 800px
+        @content;
+    }
+    }
     @if $breakpoint == phone {
     @media only screen and (max-width: 37.5em) {
         // 600px
@@ -30,8 +36,8 @@
     }
     }
     @if $breakpoint == tiny-phone {
-    @media only screen and (max-width: 30em) {
-        // 480px
+    @media only screen and (max-width: 33em) {
+        // 525px
         @content;
     }
     }
