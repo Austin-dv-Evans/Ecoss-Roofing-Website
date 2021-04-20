@@ -1,5 +1,4 @@
 .services {
-
   &__container {
     display: flex;
     flex-direction: column;
@@ -8,7 +7,6 @@
     min-height: fit-content;
     position: relative;
     padding: 10rem 4rem 20rem 4rem;
-
     background-image: linear-gradient(
     to right bottom,
     rgba(black, 0.8),
@@ -41,11 +39,20 @@
     margin: 3rem 0;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+    @include respond(tab-port){
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include respond(phone){
+      grid-template-columns: repeat(1, 1fr);
+    }
     &--list {
       font-size: 2.5rem;
       font-weight: bold;
       font-family: $google-font;
       list-style-image: url('../../assets/icons/darkGreenCheck.svg');
+      @include respond(phone){
+      font-size: 2.8rem;
+      }
     }
   }
 }

@@ -2,8 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Button from '../components/FreeInspectionBtn'
 import Integrity from '../components/Integrity'
-
-
+import Fab from '../components/Fab'
 const Homepage = () => {
   return (
     <>
@@ -25,6 +24,7 @@ const Homepage = () => {
         </div>
       </div>
       <Integrity />
+      <Fab/>
     </>
   )
 }

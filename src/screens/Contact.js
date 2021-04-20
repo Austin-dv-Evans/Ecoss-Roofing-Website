@@ -1,6 +1,7 @@
 
 import axios from 'axios'
 import React, { useState } from 'react'
+import Fab from '../components/Fab'
 
 
 
@@ -52,12 +53,12 @@ const Contact = () => {
         </div>
       }
       <div className="book__form">
+        <h1 className="book__form--heading">
+          Schedule a Free Inspection Today
+        </h1>
         <form action="#" className="form" onSubmit={handleSubmit}>
-          <div>
-            <h1 className="book__form--heading">
-              Schedule a Free Inspection Today
-            </h1>
-          </div>
+
+
           <div className="form__group">
             <input
               type="text"
@@ -148,6 +149,7 @@ const Contact = () => {
           </div>
         </form>
       </div>
+      <Fab/>
     </div>
   )
 }

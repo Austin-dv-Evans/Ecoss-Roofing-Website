@@ -3,6 +3,7 @@ import neighborhoodFromAbove from "../assets/images/neightborhoodFromAbove.jpg"
 import duskHouse from "../assets/images/houseAtDusk.jpg"
 import dayHouse from "../assets/images/houseDaylight.jpg"
 import SwipeSlide from '../components/SwipeSlide'
+import Fab from '../components/Fab'
 
 
 const Projects = () => {
@@ -63,6 +64,7 @@ const Projects = () => {
           }
     </div>
     <SwipeSlide/>
+    <Fab/>
     </>
   )
 }

@@ -1,5 +1,4 @@
 .book {
-
   &__section {
     padding: 10rem 0;
       background-image: linear-gradient(
@@ -8,11 +7,8 @@
       rgba($color-primary-dark, 0.3)
     ),
     url("../../assets/images/fancy-cushion.png");
-    
   }
-
   &__form {
-
     width: 80%;
     filter: drop-shadow(0px 0px 40px black);
     border-radius: 10px;
@@ -25,19 +21,17 @@
       url(../../assets/images/denverCity.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-
+    overflow: hidden;
     margin-left: 10%;
-
     &--heading{
       padding: 2.5rem 0;
       font-family: $google-font;
       font-size: 4rem;
-      font-weight: 500 ;
+      font-weight: 500;
       color: $color-grey-dark;
-      width: fit-content;
+      text-align: center;
     }
   }
-
   &__alert {
     position: absolute;
     z-index: 3;
@@ -52,7 +46,6 @@
     margin-bottom: 1rem;
     text-align: center;
     background-color: rgba($color-primary-dark, 0.95);
-
     &--heading {
       font-family: $heading-font;
       padding-bottom: 1rem;
@@ -76,7 +69,6 @@
   &__group:not(:last-child) {
     margin-bottom: 2rem;
   }
-
   &__input {
     padding: 1.5rem 2rem;
     font-size: 2rem;
@@ -87,19 +79,15 @@
     border-bottom: 3px solid transparent;
     width: 80%;
     transition: all 0.3s;
-
-
     &:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba($color: $color-primary, $alpha: 0.1);
       border-bottom: 3px solid $color-primary;
     }
-
     &:focus:invalid {
       border-bottom: 3px solid $color-secondary;
     }
   }
-
   &__submit {
     margin-bottom: 5rem;
     text-transform: uppercase;
@@ -111,7 +99,6 @@
     background-color: $color-grey-light;
     color: $color-secondary;
     transition: all .3s;
-
     &:hover {
       transform: translateY(-2px) scale(1.05);
       box-shadow: 0 1rem 2rem rgba($color: black, $alpha: .2);

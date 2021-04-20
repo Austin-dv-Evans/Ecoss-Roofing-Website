@@ -50,7 +50,7 @@ const Navbar = () => {
             <Button />
           </Link>
           <Link to="/quote" onClick={() => setOpen(false)}>
-            <button className="navbar__hamburger">
+            <button className="navbar__cal">
               <img
                 className="navbar__calIcon"
                 src={cal}

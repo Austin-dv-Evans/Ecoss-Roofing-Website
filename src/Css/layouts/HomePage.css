@@ -1,10 +1,10 @@
 /* Error: Undefined mixin.
  *    ,
- * 13 | /   @include respond(phone){
- * 14 | |     align-items: center;
- * 15 | \   }
+ * 15 | /   @include respond(phone){
+ * 16 | |     align-items: center;
+ * 17 | \   }
  *    '
- *   src/Sass/layouts/HomePage.scss 13:3  root stylesheet */
+ *   src/Sass/layouts/HomePage.scss 15:3  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 13 \2502  \250c    @include respond(phone){\a 14 \2502  \2502      align-items: center;\a 15 \2502  \2514    }\a    \2575 \a   src/Sass/layouts/HomePage.scss 13:3  root stylesheet";
+  content: "Error: Undefined mixin.\a    \2577 \a 15 \2502  \250c    @include respond(phone){\a 16 \2502  \2502      align-items: center;\a 17 \2502  \2514    }\a    \2575 \a   src/Sass/layouts/HomePage.scss 15:3  root stylesheet";
 }

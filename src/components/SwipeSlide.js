@@ -1,11 +1,11 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, {Navigation, Pagination} from 'swiper'
-
 import "swiper/swiper-bundle.css"
 import denver from "../assets/images/denverCity.jpg"
 import duskHouse from "../assets/images/houseAtDusk.jpg"
 import dayHouse from "../assets/images/houseDaylight.jpg"
+import Fab from './Fab'
 
 SwiperCore.use([Navigation, Pagination])
 
@@ -47,6 +47,7 @@ const SwipeSlide = () => {
           <p className="swiper__caption">Proudly Serving Denver for 35years</p>
         </SwiperSlide>
       </Swiper>
+      <Fab/>
     </div>
   )
 }

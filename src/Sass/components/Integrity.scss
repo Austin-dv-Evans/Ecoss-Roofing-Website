@@ -40,6 +40,9 @@
       margin-bottom: 12rem;
       padding: 6rem;
     }
+    @include respond(phone){
+      width: 70%;
+    }
   }
   &__icon {
     width: 20rem;
@@ -64,7 +67,5 @@
     @include respond(tab-port-sm){
       font-size: 3rem;
     }
-  
   }
-
 }

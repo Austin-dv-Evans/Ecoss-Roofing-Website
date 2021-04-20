@@ -4,38 +4,43 @@
   align-items: flex-start;
   justify-content: center;
   min-height: 85vh;
-  background-image: url("../../assets/images/houseAtDusk.jpg");
+  // background-image: url("../../assets/images/houseAtDusk.jpg");
+  background-image: url("../../assets/images/tools.jpg");
   background-size: cover;
-  background-position: bottom right;
+  // background-position: bottom right;
+  background-position: center;
   clip-path: polygon(100% 0, 100% 100%, 50% 95%, 0 100%, 0 0);
   background-attachment: fixed;
   padding-bottom: 10rem;
   @include respond(phone){
     align-items: center;
   }
-
   &__container {
     margin: 2rem 0 3rem 3rem;
     padding: 1rem;
     width: 50%;
     min-width: 557px;
-    background-color: rgba($color-grey-light, 0.9);
+    // background-color: rgba($color-grey-light, 1);
+
+    background-image: linear-gradient(to bottom, rgba($color-grey-light, 0.9), rgba($color-grey-light, 0.9)), url('../../assets/images/metalBright.jpeg');
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: solid 10px rgba($color-primary, $alpha: .3);
+    border-radius: 20px;
+    border: 5px outset $color-primary-light;
     @include respond(phone){
       margin: 0;
       min-width: 350px;
     }
   }
-
   &__heading {
     font-size: 4rem;
     margin-top: 2rem;
     padding: 1rem;
     font-family: $heading-font;
     text-align: center;
+    
   }
   &__subheading {
     font-size: 2rem;
@@ -51,6 +56,55 @@
   }
   &__button {
     margin: 2rem 5rem;
+  }
+}
 
+.fab{
+  background-color: black;
+  height: 60px;
+  width: 60px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2%;
+  right: 1%;
+  z-index: 20;
+  box-shadow: 0px 1px 10px $color-secondary-dark;
+  &__calIcon {
+    height: 28px;
+    color: $color-primary;
+    filter: $svg-fill-primary;
+  }
+  &__phoneLink{
+    text-decoration: none !important;
+  }
+  @include respond(tiny-phone) {
+    display: flex;
+  }
+}
+.fab-2{
+  background-color: black;
+  height: 60px;
+  width: 60px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 5rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 11%;
+  right: 1%;
+  z-index: 20;
+  box-shadow: 0px 1px 10px $color-secondary-dark;
+  &__phoneIcon {
+    height: 40px;
+    width: 20px;
+  }
+  @include respond(tiny-phone) {
+    display: flex;
   }
 }

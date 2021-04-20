@@ -1,7 +1,7 @@
 /* Error: Undefined variable.
  *   ,
- * 3 |     background-image:linear-gradient(to bottom, rgba($color-primary, .7) , rgba(black, .7)), url('../../assets/images/reflection.jpg');
- *   |                                                      ^^^^^^^^^^^^^^
+ * 3 |     background-image:linear-gradient(to bottom, rgba($color-primary-dark, .5) , rgba(black, .9)), url('../../assets/images/herringbone.png');
+ *   |                                                      ^^^^^^^^^^^^^^^^^^^
  *   '
  *   src/Sass/layouts/AboutPage.scss 3:54  root stylesheet */
 
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 3 \2502      background-image:linear-gradient(to bottom, rgba($color-primary, .7) , rgba(black, .7)), url('../../assets/images/reflection.jpg');\a   \2502                                                       ^^^^^^^^^^^^^^\a   \2575 \a   src/Sass/layouts/AboutPage.scss 3:54  root stylesheet";
+  content: "Error: Undefined variable.\a   \2577 \a 3 \2502      background-image:linear-gradient(to bottom, rgba($color-primary-dark, .5) , rgba(black, .9)), url('../../assets/images/herringbone.png');\a   \2502                                                       ^^^^^^^^^^^^^^^^^^^\a   \2575 \a   src/Sass/layouts/AboutPage.scss 3:54  root stylesheet";
 }
