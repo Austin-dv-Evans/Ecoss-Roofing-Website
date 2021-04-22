@@ -251,4 +251,11 @@
       color: $color-secondary;
     }
   }
+  @include respond(sideways){
+    width: 100%;
+    height: 10rem;
+    flex-direction: row;
+    top: 45%;
+    position: fixed;
+  }
 }

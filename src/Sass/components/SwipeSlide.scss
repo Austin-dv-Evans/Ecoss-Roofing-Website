@@ -6,12 +6,23 @@
     position: relative;
     max-width: 100vw;
     background-image:linear-gradient(to right bottom, rgba(black, .7) , rgba(black, .7)), url('../../assets/images/stonehaven.png');
+    @include respond(big-desktop){
+      height: 130vh;
+    }
     @include respond(tab-port-sm){
-      height: 95vh;
+      height: 89vh;
+    }
+    @include respond(phone){
+      height: 83vh;
     }
     @include respond(tiny-phone){
-      height: 85vh;
+      height: 70vh;
     }
+    @include respond(sideways){
+      height: 230vh !important;
+    }
+
+  
   }
   &__heading {
     padding-top: 3rem;
@@ -30,6 +41,9 @@
     }
     @include respond(tiny-phone){
       width: 95%;
+    }
+    @include respond(tab-port-sm){
+      width: 80%;
     }
   }
   &-slide {

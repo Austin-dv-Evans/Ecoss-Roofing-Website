@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Saira:wght@300;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @keyframes bounce {
   0% {
     transform: scale(1);
@@ -318,6 +321,15 @@
   text-decoration: underline;
   color: #ffab00;
 }
+@media only screen and (max-height: 23.5em) {
+  .sideNav {
+    width: 100%;
+    height: 10rem;
+    flex-direction: row;
+    top: 45%;
+    position: fixed;
+  }
+}
 
 .footer {
   width: 100%;
@@ -435,15 +447,37 @@
   width: 100%;
   height: 50vh;
   max-height: 40rem;
+  min-height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.8) 50%), url(../../assets/images/helmets.jpg);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.9) 50%), url(../../assets/images/americaBW.jpg);
+  background-size: cover;
+}
+@media only screen and (max-width: 112.5em) {
+  .footer2 {
+    height: 45vh;
+  }
+}
+@media only screen and (max-width: 75em) {
+  .footer2 {
+    height: 39vh;
+  }
 }
 @media only screen and (max-width: 33em) {
   .footer2 {
     height: 30vh;
+  }
+}
+@media only screen and (max-height: 37.5em) {
+  .footer2 {
+    height: 45vh;
+  }
+}
+@media only screen and (max-height: 23.5em) {
+  .footer2 {
+    height: 75vh;
   }
 }
 .footer2__container {
@@ -667,14 +701,29 @@
   max-width: 100vw;
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../assets/images/stonehaven.png");
 }
+@media only screen and (max-width: 112.5em) {
+  .swiper__page {
+    height: 130vh;
+  }
+}
 @media only screen and (max-width: 50em) {
   .swiper__page {
-    height: 95vh;
+    height: 89vh;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .swiper__page {
+    height: 83vh;
   }
 }
 @media only screen and (max-width: 33em) {
   .swiper__page {
-    height: 85vh;
+    height: 70vh;
+  }
+}
+@media only screen and (max-height: 23.5em) {
+  .swiper__page {
+    height: 230vh !important;
   }
 }
 .swiper__heading {
@@ -698,6 +747,11 @@
 @media only screen and (max-width: 33em) {
   .swiper__images {
     width: 95%;
+  }
+}
+@media only screen and (max-width: 50em) {
+  .swiper__images {
+    width: 80%;
   }
 }
 .swiper-slide {
@@ -743,7 +797,7 @@
   align-items: flex-start;
   justify-content: center;
   min-height: 85vh;
-  background-image: url("../../assets/images/tools.jpg");
+  background-image: url("../../assets/images/pencilMeasuments.jpg");
   background-size: cover;
   background-position: center;
   clip-path: polygon(100% 0, 100% 100%, 50% 95%, 0 100%, 0 0);
@@ -753,6 +807,11 @@
 @media only screen and (max-width: 37.5em) {
   .homepage {
     align-items: center;
+  }
+}
+@media only screen and (max-width: 33em) {
+  .homepage {
+    min-height: 700px;
   }
 }
 .homepage__container {
@@ -837,7 +896,7 @@
   font-size: 5rem;
   border-radius: 50%;
   position: fixed;
-  bottom: 11%;
+  bottom: 12%;
   right: 1%;
   z-index: 20;
   box-shadow: 0px 1px 10px #b27700;
@@ -851,14 +910,19 @@
     display: flex;
   }
 }
+@media only screen and (max-height: 37.5em) {
+  .fab-2 {
+    bottom: 12%;
+  }
+}
 
 .about__page {
-  background-image: linear-gradient(to bottom, rgba(67, 118, 42, 0.5), rgba(0, 0, 0, 0.9)), url("../../assets/images/herringbone.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right;
+  background-position: center;
   min-height: fit-content;
   padding-bottom: 10rem;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../assets/images/stonehaven.png");
 }
 .about__container {
   width: 100%;
@@ -894,7 +958,7 @@
 }
 .about__heading {
   position: absolute;
-  font-family: "Saira", sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 2rem;
   top: -15rem;
   color: black;
@@ -924,9 +988,14 @@
 .services__heading {
   margin-bottom: 3rem;
   color: black;
-  font-size: 8rem;
+  font-size: 7rem;
   font-family: "Saira", sans-serif;
   filter: drop-shadow(0px 0px 1px #ffab00);
+}
+@media only screen and (max-width: 37.5em) {
+  .services__heading {
+    text-align: center;
+  }
 }
 .services__headline {
   font-size: 2.5rem;

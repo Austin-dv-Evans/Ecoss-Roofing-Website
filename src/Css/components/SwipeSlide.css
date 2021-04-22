@@ -1,7 +1,7 @@
 /* Error: Undefined mixin.
  *    ,
- * 9  | /     @include respond(tab-port-sm){
- * 10 | |       height: 95vh;
+ * 9  | /     @include respond(big-desktop){
+ * 10 | |       height: 130vh;
  * 11 | \     }
  *    '
  *   src/Sass/components/SwipeSlide.scss 9:5  root stylesheet */
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 9  \2502  \250c      @include respond(tab-port-sm){\a 10 \2502  \2502        height: 95vh;\a 11 \2502  \2514      }\a    \2575 \a   src/Sass/components/SwipeSlide.scss 9:5  root stylesheet";
+  content: "Error: Undefined mixin.\a    \2577 \a 9  \2502  \250c      @include respond(big-desktop){\a 10 \2502  \2502        height: 130vh;\a 11 \2502  \2514      }\a    \2575 \a   src/Sass/components/SwipeSlide.scss 9:5  root stylesheet";
 }

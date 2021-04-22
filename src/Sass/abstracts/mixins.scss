@@ -42,8 +42,16 @@
     }
     }
     @if $breakpoint == short {
-      @media only screen and (max-height: 47.5em){
+      @media only screen and (max-height: 37.5em){
+        // 600px
+        @content;
+      }
+    }
+    @if $breakpoint == sideways {
+      @media only screen and (max-height: 23.5em){
+        // 376
         @content
       }
     }
+
 }

@@ -17,6 +17,9 @@ const Contact = () => {
   const [alertDialog, setAlertDialog] = useState(false)
 
 
+  // let today = new Date().toLocaleDateString()
+  let today = new Date().toISOString().slice(0, 10)
+  
   const handleSubmit = (e) => {
     e.preventDefault()
     if(antiSpam !== ''){
@@ -28,14 +31,12 @@ const Contact = () => {
         { name, email, address, phone, info, date }
       )
       setAlertDialog(true)
+      console.log({name, email, address, phone, info, date})
     }
-    
-    
     setEmail('')
     setAddress('')
     setPhone('')
     setInfo('')
-    setDate('')
     setAntiSpam('')
   }
 
@@ -57,8 +58,6 @@ const Contact = () => {
           Schedule a Free Inspection Today
         </h1>
         <form action="#" className="form" onSubmit={handleSubmit}>
-
-
           <div className="form__group">
             <input
               type="text"
@@ -119,17 +118,6 @@ const Contact = () => {
               name="message"
             ></textarea>
           </div>
-          <div className="form__group">
-            <input
-              type="date"
-              value={date}
-              onChange={(e) => setDate(e.target.value)}
-              id="date"
-              className="form__input"
-              required
-              name="date"
-            />
-          </div>
           <div className="form__group anti-spam">
             <input
               type="spam"
@@ -145,11 +133,11 @@ const Contact = () => {
               type="submit"
               value="Submit &rarr;"
               className="form__submit"
+              onClick={() => setDate(today)}
             />
           </div>
         </form>
       </div>
-      <Fab/>
     </div>
   )
 }
