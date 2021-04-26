@@ -18,10 +18,10 @@
     align-items: center;
   }
   @include respond(tiny-phone){
-    min-height: 700px;
+    height: 800px;
   }
   &__container {
-    margin: 2rem 0 3rem 3rem;
+    margin: 3rem;
     padding: 1rem;
     width: 50%;
     min-width: 557px;
@@ -35,20 +35,21 @@
     border-radius: 20px;
     border: 5px outset $color-primary-light;
     @include respond(phone){
-      margin: 0;
+      margin: -22rem 0 0 0;
       min-width: 350px;
     }
   }
   &__heading {
-    font-size: 4rem;
+    font-size: 5rem;
     margin-top: 2rem;
     padding: 1rem;
-    font-family: $heading-font;
+    // font-family: $heading-font;
+    font-family: $Font-Chakra;
     text-align: center;
     
   }
   &__subheading {
-    font-size: 2rem;
+    font-size: 3rem;
     padding: 1.5rem;
     font-family: $google-font;
     text-align: center;
@@ -71,6 +72,7 @@
   display: none;
   justify-content: center;
   align-items: center;
+  
   font-size: 5rem;
   border-radius: 50%;
   position: fixed;
@@ -82,6 +84,7 @@
     height: 28px;
     color: $color-primary;
     filter: $svg-fill-primary;
+    transform: translateY(2px) translateX(1px);
   }
   &__phoneLink{
     text-decoration: none !important;
@@ -103,6 +106,7 @@
   position: fixed;
   bottom: 12%;
   right: 1%;
+  // margin-bottom: .5rem;
   z-index: 20;
   box-shadow: 0px 1px 10px $color-secondary-dark;
   &__phoneIcon {
@@ -113,6 +117,6 @@
     display: flex;
   }
   @include respond(short) {
-    bottom: 12%
+    margin-bottom: .75rem;
   }
 }
