@@ -14,10 +14,10 @@ const Footer = () => {
             className="footer__logo"
           />
           <div className="footer__location">
-            <a href="tel:1+303-881-0288"         className="footer__callNow--link">
+            <a href="tel:1+7204486604"         className="footer__callNow--link">
               <div className="footer__callNow">
                 <h1 className="footer__callToday">Call Us Today</h1>
-                <h2 className="footer__phoneNumber">303-881-0288</h2>
+                <h2 className="footer__phoneNumber">720-448-6604</h2>
               <img
                 className="footer__phoneIcon"
                 src={phone}
