@@ -367,7 +367,7 @@
 }
 .footer__logo {
   height: 20rem;
-  width: 40rem;
+  width: 35rem;
 }
 @media only screen and (max-width: 33em) {
   .footer__logo {

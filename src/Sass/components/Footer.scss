@@ -28,7 +28,8 @@
   }
   &__logo {
     height: 20rem;
-    width: 40rem;
+    // width: 40rem;
+    width: 35rem;
     @include respond(tiny-phone) {
       margin-left: -10rem;
     }

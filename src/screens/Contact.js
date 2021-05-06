@@ -27,7 +27,7 @@ const Contact = () => {
     }
     else{
       axios.post(
-        "https://sheet.best/api/sheets/d53e427d-a0aa-436d-8974-ee6674eb8013",
+        "https://sheet.best/api/sheets/36c9d1ca-d4a9-4b09-9c16-0e6eceab2faa",
         { name, email, address, phone, info, date }
       )
       setAlertDialog(true)
