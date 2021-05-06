@@ -16,7 +16,7 @@ const Fab = () => {
         </Link>
         
       </div>
-      <a href="tel:1+303-881-0288" className="fab__phoneLink">
+      <a href="tel:1+7204486604" className="fab__phoneLink">
         <div className="fab-2">
         <img
           className="fab-2__phoneIcon"
