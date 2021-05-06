@@ -36,14 +36,14 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="navbar__navigation--phoneQuote">
-          <a href="tel:1+303-881-0288" className="callNow__link">
+          <a href="tel:1+7204486604" className="callNow__link">
             <div className="callNow">
               <img
                 className="navbar__phoneIcon"
                 src={phone}
                 alt="Call Ecoss Roofing and Construction Now"
               />
-              <h2 className="callNow__phoneNumber">303-881-0288</h2>
+              <h2 className="callNow__phoneNumber">720-448-6604</h2>
             </div>
           </a>
           <Link to="/quote" className="navbar__scheduleBtn">

@@ -833,6 +833,11 @@
     min-width: 350px;
   }
 }
+@media only screen and (max-width: 135.5em) {
+  .homepage__container {
+    min-width: 350px;
+  }
+}
 .homepage__heading {
   font-size: 5rem;
   margin-top: 2rem;

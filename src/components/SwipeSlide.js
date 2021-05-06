@@ -28,7 +28,7 @@ const SwipeSlide = () => {
             alt="neighborhood from above"
             className="swiper__images"
           />
-          <p className="swiper__caption">Project One WOW just WOW</p>
+          <p className="swiper__caption">Project One</p>
         </SwiperSlide>
         <SwiperSlide>
           <img
@@ -36,7 +36,7 @@ const SwipeSlide = () => {
             alt="neighborhood from above"
             className="swiper__images"
           />
-          <p className="swiper__caption">Project Two is Stunning</p>
+          <p className="swiper__caption">Project Two</p>
         </SwiperSlide>
         <SwiperSlide>
           <img
@@ -44,7 +44,7 @@ const SwipeSlide = () => {
             alt="neighborhood from above"
             className="swiper__images"
           />
-          <p className="swiper__caption">Proudly Serving Denver for 35years</p>
+          <p className="swiper__caption">Proudly Serving Denver for 35 years</p>
         </SwiperSlide>
       </Swiper>
       <Fab/>
