@@ -94,6 +94,7 @@
     display: flex;
   }
 }
+
 .fab-2{
   background-color: black;
   height: 60px;
@@ -120,4 +121,8 @@
   @include respond(short) {
     margin-bottom: .75rem;
   }
+}
+.solo {
+  bottom: 8% !important;
+  right: 2% !important;
 }
