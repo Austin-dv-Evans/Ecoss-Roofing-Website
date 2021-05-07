@@ -1,10 +1,11 @@
 /* Error: Undefined mixin.
  *    ,
- * 17 | /   @include respond(phone){
- * 18 | |     align-items: center;
- * 19 | \   }
+ * 13 | /   @include respond(phone){
+ * 14 | |     align-items: center;
+ * 15 | |     background-image: url("../../assets/images/pencilMeasuments-min.jpg");
+ * 16 | \   }
  *    '
- *   src/Sass/layouts/HomePage.scss 17:3  root stylesheet */
+ *   src/Sass/layouts/HomePage.scss 13:3  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +15,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 17 \2502  \250c    @include respond(phone){\a 18 \2502  \2502      align-items: center;\a 19 \2502  \2514    }\a    \2575 \a   src/Sass/layouts/HomePage.scss 17:3  root stylesheet";
+  content: 'Error: Undefined mixin.\a    \2577 \a 13 \2502  \250c    @include respond(phone){\a 14 \2502  \2502      align-items: center;\a 15 \2502  \2502      background-image: url("../../assets/images/pencilMeasuments-min.jpg");\a 16 \2502  \2514    }\a    \2575 \a   src/Sass/layouts/HomePage.scss 13:3  root stylesheet';
 }

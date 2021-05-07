@@ -111,7 +111,7 @@
 }
 @media only screen and (max-width: 33em) {
   .navbar__brand {
-    height: 17rem;
+    height: 13rem;
   }
 }
 .navbar__phoneIcon {
@@ -221,7 +221,7 @@
 @media only screen and (max-width: 37.5em) {
   .navbar__hamburger {
     margin: 1rem;
-    padding: 3rem;
+    padding: 2.5rem;
   }
 }
 
@@ -372,6 +372,8 @@
 @media only screen and (max-width: 33em) {
   .footer__logo {
     margin-left: -10rem;
+    height: 18rem;
+    width: 28rem;
   }
 }
 .footer__links {
@@ -383,7 +385,7 @@
 }
 @media only screen and (max-width: 33em) {
   .footer__links {
-    padding: 0 8rem 0 0;
+    padding: 0 8rem 0 1rem;
   }
 }
 .footer__link {
@@ -396,6 +398,11 @@
 .footer__link:hover {
   text-decoration: underline;
   color: #ffab00;
+}
+@media only screen and (max-width: 33em) {
+  .footer__link {
+    font-size: 1.8rem;
+  }
 }
 .footer__location {
   display: flex;
@@ -717,7 +724,7 @@
 }
 @media only screen and (max-width: 33em) {
   .swiper__page {
-    height: 70vh;
+    height: 80vh;
   }
 }
 @media only screen and (max-height: 23.5em) {
@@ -807,6 +814,7 @@
 @media only screen and (max-width: 37.5em) {
   .homepage {
     align-items: center;
+    background-image: url("../../assets/images/pencilMeasuments-min.jpg");
   }
 }
 @media only screen and (max-width: 33em) {
@@ -829,13 +837,8 @@
 }
 @media only screen and (max-width: 37.5em) {
   .homepage__container {
-    margin: -22rem 0 0 0;
-    min-width: 350px;
-  }
-}
-@media only screen and (max-width: 135.5em) {
-  .homepage__container {
-    min-width: 350px;
+    margin: -1rem 0 0 0;
+    min-width: 270px;
   }
 }
 .homepage__heading {
@@ -920,6 +923,11 @@
   .fab-2 {
     margin-bottom: 0.75rem;
   }
+}
+
+.solo {
+  bottom: 2% !important;
+  right: 2% !important;
 }
 
 .about__page {
