@@ -68,7 +68,7 @@
       height: 17rem
     }
     @include respond(tiny-phone){
-      height: 17rem;
+      height: 13rem;
     }
   }
   &__phoneIcon {
@@ -166,7 +166,7 @@
   }
   @include respond(phone){
     margin: 1rem;
-    padding: 3rem;
+    padding: 2.5rem;
   }
 }
 .navbar__cal{

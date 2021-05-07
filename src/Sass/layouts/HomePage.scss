@@ -4,11 +4,7 @@
   align-items: flex-start;
   justify-content: center;
   min-height: 85vh;
-  // background-image: url("../../assets/images/houseAtDusk.jpg");
-  // background-image: url("../../assets/images/tools.jpg");
-  // background-image: url("../../assets/images/ruler.jpg");
-  // background-image: url("../../assets/images/america.jpg");
-  background-image: url("../../assets/images/pencilMeasuments.jpg"); // this is the one
+  background-image: url("../../assets/images/pencilMeasuments.jpg");
   background-size: cover;
   background-position: center;
   clip-path: polygon(100% 0, 100% 100%, 50% 95%, 0 100%, 0 0);
@@ -16,6 +12,7 @@
   padding-bottom: 10rem;
   @include respond(phone){
     align-items: center;
+    background-image: url("../../assets/images/pencilMeasuments-min.jpg");
   }
   @include respond(tiny-phone){
     height: 800px;
@@ -33,18 +30,17 @@
     border-radius: 20px;
     border: 5px outset $color-primary-light;
     @include respond(phone){
-      margin: -22rem 0 0 0;
-      min-width: 350px;
+      margin: -15rem 0 0 0;
+      min-width: 270px;
     }
     @include respond(xl-desktop){
-      min-width: 350px;
+      // min-width: 350px;
     }
   }
   &__heading {
     font-size: 5rem;
     margin-top: 2rem;
     padding: 1rem;
-    // font-family: $heading-font;
     font-family: $Font-Chakra;
     text-align: center;
     
@@ -123,6 +119,6 @@
   }
 }
 .solo {
-  bottom: 8% !important;
+  bottom: 2% !important;
   right: 2% !important;
 }

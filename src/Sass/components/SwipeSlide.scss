@@ -16,7 +16,7 @@
       height: 83vh;
     }
     @include respond(tiny-phone){
-      height: 70vh;
+      height: 80vh;
     }
     @include respond(sideways){
       height: 230vh !important;

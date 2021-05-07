@@ -32,6 +32,8 @@
     width: 35rem;
     @include respond(tiny-phone) {
       margin-left: -10rem;
+      height: 18rem;
+      width: 28rem;
     }
   }
 
@@ -42,7 +44,8 @@
     background-color: black;
     padding: 0 6rem;
     @include respond(tiny-phone) {
-      padding: 0 8rem 0 0;
+      padding: 0 8rem 0 1rem;
+      
     }
   }
   &__link {
@@ -54,6 +57,10 @@
     &:hover{
       text-decoration: underline;
       color: $color-secondary;
+    }
+    @include respond(tiny-phone) {
+      font-size: 1.8rem;
+      
     }
   }
   &__location {
