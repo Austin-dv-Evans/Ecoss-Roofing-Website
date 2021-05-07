@@ -13,9 +13,11 @@
   @include respond(phone){
     align-items: center;
     background-image: url("../../assets/images/pencilMeasuments-min.jpg");
+    background-attachment: scroll;
   }
   @include respond(tiny-phone){
     height: 800px;
+    background-attachment: scroll;
   }
   &__container {
     margin: 3rem;

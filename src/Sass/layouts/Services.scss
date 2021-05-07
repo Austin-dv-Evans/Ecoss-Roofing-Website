@@ -18,6 +18,12 @@
     background-attachment: fixed;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     // border-top: .5rem solid $color-primary-light;
+    @include respond(phone){
+      background-attachment: scroll;
+    }
+    @include respond(tiny-phone){
+      background-attachment: scroll;
+    }
   }
   &__heading {
     margin-bottom: 3rem;

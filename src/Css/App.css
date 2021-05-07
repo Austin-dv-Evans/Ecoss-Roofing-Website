@@ -815,11 +815,13 @@
   .homepage {
     align-items: center;
     background-image: url("../../assets/images/pencilMeasuments-min.jpg");
+    background-attachment: scroll;
   }
 }
 @media only screen and (max-width: 33em) {
   .homepage {
     height: 800px;
+    background-attachment: scroll;
   }
 }
 .homepage__container {
@@ -998,6 +1000,16 @@
   background-position: bottom;
   background-attachment: fixed;
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+@media only screen and (max-width: 37.5em) {
+  .services__container {
+    background-attachment: scroll;
+  }
+}
+@media only screen and (max-width: 33em) {
+  .services__container {
+    background-attachment: scroll;
+  }
 }
 .services__heading {
   margin-bottom: 3rem;
