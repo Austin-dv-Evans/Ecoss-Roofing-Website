@@ -795,7 +795,7 @@
 }
 
 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
-  bottom: 13% !important;
+  bottom: 20% !important;
 }
 
 .homepage {

@@ -31,7 +31,7 @@ const SwipeSlide = () => {
           />
           <p className="swiper__caption">Metal</p>
         </SwiperSlide>
-                <SwiperSlide>
+        <SwiperSlide>
           <img
             src={dirtLawn}
             alt="neighborhood from above"
