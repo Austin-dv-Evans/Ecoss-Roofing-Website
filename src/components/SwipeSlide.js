@@ -2,9 +2,10 @@ import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, {Navigation, Pagination} from 'swiper'
 import "swiper/swiper-bundle.css"
-import denver from "../assets/images/denverCity.jpg"
-import duskHouse from "../assets/images/houseAtDusk.jpg"
-import dayHouse from "../assets/images/houseDaylight.jpg"
+import sideHouse from "../assets/images/sideHouse.png"
+import shinglesAbove from "../assets/images/shinglesAbove.png"
+import grayHouse from "../assets/images/grayHouse.png"
+import dirtLawn from "../assets/images/dirtLawn.png"
 import Fab from './Fab'
 
 SwiperCore.use([Navigation, Pagination])
@@ -24,27 +25,35 @@ const SwipeSlide = () => {
       >
         <SwiperSlide>
           <img
-            src={dayHouse}
+            src={grayHouse}
             alt="neighborhood from above"
             className="swiper__images"
           />
-          <p className="swiper__caption">Project One</p>
+          <p className="swiper__caption">Metal</p>
+        </SwiperSlide>
+                <SwiperSlide>
+          <img
+            src={dirtLawn}
+            alt="neighborhood from above"
+            className="swiper__images"
+          />
+          <p className="swiper__caption">Metal</p>
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src={duskHouse}
+            src={shinglesAbove}
             alt="neighborhood from above"
             className="swiper__images"
           />
-          <p className="swiper__caption">Project Two</p>
+          <p className="swiper__caption">Shingles</p>
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src={denver}
+            src={sideHouse}
             alt="neighborhood from above"
             className="swiper__images"
           />
-          <p className="swiper__caption">Proudly Serving Denver for 35 years</p>
+          <p className="swiper__caption">Downspout</p>
         </SwiperSlide>
       </Swiper>
       <Fab/>
