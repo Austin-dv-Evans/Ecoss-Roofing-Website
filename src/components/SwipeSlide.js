@@ -4,7 +4,7 @@ import SwiperCore, {Navigation, Pagination} from 'swiper'
 import "swiper/swiper-bundle.css"
 import sideHouse from "../assets/images/sideHouse.png"
 import shinglesAbove from "../assets/images/shinglesAbove.png"
-import grayHouse from "../assets/images/grayHouse.png"
+import grayHouse from "../assets/images/grayHouse2.png"
 import dirtLawn from "../assets/images/dirtLawn.png"
 import Fab from './Fab'
 
